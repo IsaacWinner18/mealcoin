@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: rgb(6, 85, 255);
+    background: rgb(18, 33, 63);
     color: #000000;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -12,7 +12,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #222222;
+    background: rgb(18, 33, 63);
     border-bottom: 1px solid #444444;
 }
 .header button {
@@ -31,29 +31,6 @@ body {
     height: 24px;
 }
 
-.container-one {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: -20px;
-    margin-bottom: 20px;
-}
-
-
-.a {
-    display: flex;
-    gap: 9px;
-    align-items: center;
-    padding: 3px 6px;
-}
-
-.container-one img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    background: rgb(6, 85, 255);
-}
-
 .menu-bar {
     display: flex;
     gap: 4px;
@@ -64,7 +41,6 @@ body {
 .menu-bar .dot {
     width: 5px;
     height: 5px;
-    background-color: rgb(255, 255, 255);
     border: 2px solid black;
     border-radius: 50%;
     margin: 4px 3px;
@@ -72,7 +48,7 @@ body {
 
 .dashboard {
   text-align: center;
-  background-color: #001c46;
+  background-color: #0007112f;
   color: white;
   padding-top: 15px;
   border-top-left-radius: 15%;
@@ -82,14 +58,12 @@ body {
 
 .container {
   text-align: center;
-  width: 170px;
+  margin: 50px 5px;
   padding: 17px;
   margin-bottom: 21px;
-  background-color: rgba(27, 7, 54, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-  position: relative;
-  left: 90px;
   z-index: 1;
 }
 
@@ -122,6 +96,9 @@ body {
 .footer {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  top: 90px;
+  bottom: 0px;
 }
 
 .footer-button {
@@ -137,7 +114,7 @@ body {
 }
 
 .footer-button:hover {
-  background-color: #e600cc;
+  background-color: #be00a8;
 }
 
 /* Background hexagon */
