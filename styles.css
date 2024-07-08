@@ -121,7 +121,7 @@ body {
 body::before {
   content: '';
   position: absolute;
-  top: 70%;
+  top: 58%;
   left: 50%;
   width: 320px;
   height: 320px;
@@ -129,7 +129,7 @@ body::before {
   clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
   transform: translate(-50%, -50%);
   z-index: 0;
-  animation: rotate 10s linear infinite;
+  animation: rotate 19s linear infinite;
 }
 
 @keyframes rotate {

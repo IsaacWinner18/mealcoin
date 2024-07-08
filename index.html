@@ -30,7 +30,7 @@
           
           <div style="display: flex; justify-content: center; align-items: center;">
             
-            <p style="background: rgb(7, 37, 102); width: 18px; height: 26px; display: flex; align-items: center; justify-content: center; border-radius: 40%; margin: 10px;">
+            <p style=" width: 18px; height: 26px; display: flex; align-items: center; justify-content: center; border-radius: 40%; margin: 10px;">
 
               <img src="arrow-up-svgrepo-com (1).svg" width="22px"> 
             </p>
@@ -54,7 +54,7 @@
         <div class="main">
           <div class="next-grab-container">
             <div class="next-grab-title">Next GRAB</div>
-            <div id="countdown" class="countdown">23:41:09</div>
+            <div id="countdown" class="countdown">01:00:00</div>
             <div class="ogc-value">0.39063 MLC</div>
           </div>
         </div>
@@ -83,7 +83,7 @@
   document.addEventListener('DOMContentLoaded', (event) => {
     // Set the countdown timer
     let countdownElement = document.getElementById('countdown');
-    let countdownTime = 23 * 60 * 60 + 41 * 60 + 9; // initial countdown time in seconds
+    let countdownTime = 0o1 * 60 * 60 + 0o0 * 60 + 0; // initial countdown time in seconds
 
     function updateCountdown() {
       let hours = Math.floor(countdownTime / 3600);
