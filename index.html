@@ -36,7 +36,7 @@
             </p>
 
               <p>
-                <span style="font-size: 24px; font-weight: 700;"> 3,068.</span>
+                <span style="font-size: 24px; font-weight: 700;">00.</span>
                 <span style="font-size: 16px; font-weight: 600;">44</span> 
                 <span style="font-weight: 600; padding-left: 4px;">MLC</span>
               </p>
@@ -55,6 +55,10 @@
           <div class="next-grab-container">
             <div class="next-grab-title">Next GRAB</div>
             <div id="countdown" class="countdown">01:00:00</div>
+            <div id="claim" class="text-3xl">
+              <span style="background-color: rgb(148, 3, 141); padding: 10px 18px;"> claim</span>
+            </div>
+
             <div class="ogc-value">0.39063 MLC</div>
           </div>
         </div>
@@ -71,35 +75,10 @@
 </footer>
 
 
+
 <script src="script.js"></script>
-
-
-      
-
 </body>
 
-
-<script>
-  document.addEventListener('DOMContentLoaded', (event) => {
-    // Set the countdown timer
-    let countdownElement = document.getElementById('countdown');
-    let countdownTime = 0o1 * 60 * 60 + 0o0 * 60 + 0; // initial countdown time in seconds
-
-    function updateCountdown() {
-      let hours = Math.floor(countdownTime / 3600);
-      let minutes = Math.floor((countdownTime % 3600) / 60);
-      let seconds = countdownTime % 60;
-
-      countdownElement.textContent = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-
-      if (countdownTime > 0) {
-        countdownTime--;
-      }
-    }
-
-    setInterval(updateCountdown, 1000);
-  });
-</script>
 
 </html>
 
