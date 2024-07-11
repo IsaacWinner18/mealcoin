@@ -1,89 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>PELLER</title>
-</head>
-<body>
-
-<section style="color: rgb(255, 255, 255); background-color: #0007112f;" class="">
-
-    
-    <div class="px-3 py-2 rounded-sm flex justify-between mx-5 my-3">
-        <p style="font-size: 14px;">Good Morning, <br><span style="font-weight: 700;"> @isaacwinner</span></p>
+    <title>MEALCOIN</title>
+  </head>
+  <body>
+    <section
+      style="color: rgb(255, 255, 255); background-color: #0007112f"
+      class=""
+    >
+   
+      <div class="px-3 py-2 rounded-sm flex justify-between mx-5 my-3">
+        <p style="font-size: 14px">
+          Good Morning, <br /><span id="username" style="font-weight: 700">
+            @isaacwinner</span
+          >
+        </p>
         <p>
           <span class="text-xs text-red-400 absolute botton-16">soon!</span>
-          <img src="wallet-svgrepo-com.png" width="40px">
+          <img src="wallet-svgrepo-com.png" width="40px" />
         </p>
+      </div>
+    </section>
 
-</div>
-</section>
-
-<section>
-    <div class="dashboard">
-       <div>
-        <p style="font-size: 12px; margin-top: 20px;">CURRENT BALANCE</p>
+    <section>
+      <div class="dashboard">
         <div>
-          
-          <div style="display: flex; justify-content: center; align-items: center;">
-            
-            <p style=" width: 18px; height: 26px; display: flex; align-items: center; justify-content: center; border-radius: 40%; margin: 10px;">
-
-              <img src="arrow-up-svgrepo-com (1).svg" width="22px"> 
-            </p>
+          <p style="font-size: 12px; margin-top: 20px">CURRENT BALANCE</p>
+          <div>
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <p
+                style="
+                  width: 18px;
+                  height: 26px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 40%;
+                  margin: 10px;
+                "
+              >
+                <img src="arrow-up-svgrepo-com (1).svg" width="22px" />
+              </p>
 
               <p>
-                <span class="earningcounter" style="font-size: 24px; font-weight: 700;">00</span><span style="font-size: 16px; font-weight: 600;">.00</span> 
-<span style="font-weight: 600; padding-left: 4px;">MLC</span>
+                <span
+                  class="earningcounter"
+                  style="font-size: 24px; font-weight: 700"
+                  >00</span
+                ><span style="font-size: 16px; font-weight: 600">.00</span>
+                <span style="font-weight: 600; padding-left: 4px">MLC</span>
               </p>
             </div>
             <i></i>
-        </div>
-        <div style="background-color: rgb(148, 3, 141);  font-size: 12px; font-weight: 600; border-radius: 20px;">
-            <p style="padding: 8px 0;">EARNING RATE +1000.<span>00</span> <span style="font-weight: 800;">MLC/hr</span></p>
-        </div>
-       </div> 
-
-       <div class="container">
-        <div class="header">
-        </div>
-        <div class="main">
-          <div class="next-grab-container">
-            <div class="next-grab-title">Next GRAB!</div>
-            
-            <div id="countdown" class="countdown">01:00:00</div>
-
-            <div style="margin-bottom: 10px;">
-              <span class="text-3xl claimbtn"> claim</span>
-            </div>
-
-            <div class="ogc-value">1000.00 MLC</div>
+          </div>
+          <div
+            style="
+              background-color: rgb(148, 3, 141);
+              font-size: 12px;
+              font-weight: 600;
+              border-radius: 20px;
+            "
+          >
+            <p style="padding: 8px 0">
+              EARNING RATE +1000.<span>00</span>
+              <span style="font-weight: 800">MLC/hr</span>
+            </p>
           </div>
         </div>
-       
-      </div> 
-    </div>
 
-</section>
+        <div class="container">
+          <div class="header"></div>
+          <div class="main">
+            <div class="next-grab-container">
+              <div class="next-grab-title">Next GRAB!</div>
 
-<footer class="footer">
-  <button class="footer-button">
-    <a href="#">HOME</a>
-  </button>
-  <button class="footer-button">
-    <a href="earn.html">EARN</a>
-  </button>
-  <button class="footer-button">INVITE</button>
-</footer>
+              <div id="countdown" class="countdown">01:00:00</div>
 
+              <div style="margin-bottom: 10px">
+                <span class="text-3xl claimbtn"> claim</span>
+              </div>
 
+              <div class="ogc-value">1000.00 MLC</div>
+            </div>
+          </div>
+<div class="confetti">
+          <img src="confetti-unscreen.gif" style="width: 30px; position: absolute; top: 50%; left: 35%;" />
+          <img src="confetti-unscreen.gif" style="width: 30px; position: absolute; top: 50%; left: 43%;" />
+          <img src="confetti-unscreen.gif" style="width: 30px; position: absolute; top: 50%; left: 50%;" />
+          <img src="confetti-unscreen.gif" style="width: 30px; position: absolute; top: 50%; left: 58%;" />
 
-<script src="script.js"></script>
-</body>
+        </div>
+        </div>
+      </div>
+    </section>
 
+    <footer class="footer">
+      <button class="footer-button">
+        <a href="#" class="flex flex-col items-center">
+          <!-- <p><img src="buy-a-house.png" width="20px"></p> -->
+          <p><img src="real-estate-unscreen.gif" width="40px" /></p>
+          <p>HOME</p>
+        </a>
+      </button>
+      <button class="footer-button">
+        <a href="earn.html" class="flex flex-col items-center">
+          <!-- <p><img src="earn-money.png" width="30px"></p> -->
+          <p><img src="earn-money-unscreen.gif" width="40px" /></p>
+          <p>EARN</p>
+        </a>
+      </button>
+      <button class="footer-button">
+        <a href="" class="flex flex-col items-center">
+          <p><img src="add-user-unscreen.gif" width="40px" /></p>
+          <p>INVITE</p>
+        </a>
+      </button>
+    </footer>
+   
+    <script src="script.js"></script>
 
+    <script>
+     document.addEventListener('DOMContentLoaded', function() {
+      
+            // Access the Telegram WebApp object
+            const tg = window.Telegram.WebApp;
+            
+            const user = tg.initDataUnsafe.user;
+            
+             
+            
+              document.getElementById('username').textContent = user.id;
+              
+            
+
+            // Expand the Mini App to maximum height
+            tg.expand();
+        });
+    </script>
+  </body>
 </html>
-

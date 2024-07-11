@@ -4,7 +4,7 @@ body {
     padding: 0;
     background: rgb(18, 33, 63);
     color: #000000;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     overflow-x: hidden;
 }
 .header {
@@ -118,7 +118,7 @@ body {
 .footer-button {
   background-color: #ff00e6;
   border: none;
-  padding: 19px 10px;
+  padding: 2px 10px;
   color: white;
   border-radius: 5px;
   cursor: pointer;
