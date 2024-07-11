@@ -64,7 +64,19 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-  z-index: 1;
+}
+
+.claimbtn {
+  background-color: rgb(202, 23, 202);
+  border: none;
+  padding: 10px 28px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+  margin: 0 5px;
+  font-size: 1.1em;
+  z-index: 99999;
 }
 
 .header, .main, .footer {
@@ -119,11 +131,11 @@ body {
   background-color: #be00a8;
 }
 
-/* Background hexagon */
+
 body::before {
   content: '';
   position: absolute;
-  top: 55%;
+  top: 25%;
   left: 50%;
   width: 206px;
   height: 206px;
@@ -143,3 +155,6 @@ body::before {
   }
 }
 
+
+
+ 
