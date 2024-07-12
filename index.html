@@ -10,19 +10,28 @@
   </head>
   <body>
     <section
-      style="color: rgb(255, 255, 255); background-color: #0007112f"
+      style="color: rgb(255, 255, 255); background-color: #0007112f; border: 1px solid white; margin-bottom: 9px;"
       class=""
     >
    
       <div class="px-3 py-2 rounded-sm flex justify-between mx-5 my-3">
         <p style="font-size: 14px">
-          Good Morning, <br /><span id="username" style="font-weight: 700">
-            @isaacwinner</span
-          >
+          
+          <span id="firstname" style="font-weight: 700; font-size: 19px;"> 
+
+          </span>
+
+          <span id="lastname" style="font-weight: 700; font-size: 19px;">
+            
+          </span>
+          <br>
+          <span>ID: <span id="userid"></span></span>
         </p>
+      
         <p>
-          <span class="text-xs text-red-400 absolute botton-16">soon!</span>
-          <img src="wallet-svgrepo-com.png" width="40px" />
+          <span class="text-xs text-orange-400 absolute botton-16">soon!</span>
+          <!-- <img src="wallet-svgrepo-com.png" width="40px" /> -->
+          <img src="tmp-2400-hV33Ns67HImU--unscreen.gif" width="60px" />
         </p>
       </div>
     </section>
@@ -70,11 +79,12 @@
               font-size: 12px;
               font-weight: 600;
               border-radius: 20px;
+              border: 1px solid white;
             "
           >
             <p style="padding: 8px 0">
               EARNING RATE +1000.<span>00</span>
-              <span style="font-weight: 800">MLC/hr</span>
+              <span style="font-weight: 800; border: 1px solid white;">MLC/hr</span>
             </p>
           </div>
         </div>
@@ -95,10 +105,10 @@
             </div>
           </div>
 <div class="confetti">
-          <img src="confetti-unscreen.gif" style="width: 30px; position: absolute; top: 50%; left: 35%;" />
-          <img src="confetti-unscreen.gif" style="width: 30px; position: absolute; top: 50%; left: 43%;" />
-          <img src="confetti-unscreen.gif" style="width: 30px; position: absolute; top: 50%; left: 50%;" />
-          <img src="confetti-unscreen.gif" style="width: 30px; position: absolute; top: 50%; left: 58%;" />
+          <img src="confetti-unscreen.gif" style="width: 30px; position: absolute; top: 49%; left: 35%;" />
+          <img src="confetti-unscreen.gif" style="width: 30px; position: absolute; top: 47%; left: 43%;" />
+          <img src="confetti-unscreen.gif" style="width: 30px; position: absolute; top: 47%; left: 50%;" />
+          <img src="confetti-unscreen.gif" style="width: 30px; position: absolute; top: 49%; left: 58%;" />
 
         </div>
         </div>
@@ -140,7 +150,9 @@
             
              
             
-              document.getElementById('username').textContent = user.id;
+              document.getElementById('firstname').textContent = user.first_name;
+              document.getElementById('lastname').textContent = user.last_name;
+              document.getElementById('userid').textContent = user.id;
               
             
 
